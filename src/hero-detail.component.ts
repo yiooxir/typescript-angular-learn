@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 
 import { Hero } from './types/Hero';
 import { HeroService } from './hero.service';
+
 @Component({
     // moduleId: module.id,
     selector: 'my-hero-detail',

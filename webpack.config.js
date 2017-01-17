@@ -10,11 +10,21 @@ module.exports = {
   output: {
     path: './dist',
     filename: 'app.[name].js',
+    publicPath: "/",
     // filename: 'app.bundle.js'
   },
   module: {
     loaders: [
-      {test: /\.ts$/, loader: 'ts'}
+      { test: /\.ts$/, loaders: ['awesome-typescript-loader', 'angular2-template-loader?keepUrl=true'] },
+      {
+        test: /\.(html|css)$/,
+        loader: 'raw-loader',
+        exclude: /\.async\.(html|css)$/
+      },
+      {
+        test: /\.async\.(html|css)$/,
+        loaders: ['file?name=[name].[hash].[ext]', 'extract']
+      }
     ]
   },
   plugins: [

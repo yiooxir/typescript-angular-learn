@@ -6,7 +6,11 @@
         "sourceMap": true,
         "outDir": "dist",
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "types": ["node"],
+        "typeRoots": [
+            "node_modules/@types"
+        ]
     },
     "files": [
         "./src/main.ts"

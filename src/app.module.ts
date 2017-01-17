@@ -3,7 +3,7 @@ import {BrowserModule}  from '@angular/platform-browser';
 
 import {AppComponent}         from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ContactsComponent } from './contacts/contacts.component';
+// import { ContactsComponent } from './contacts/contacts.component';
 
 import appRoutes from './app.routes';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
@@ -18,7 +18,7 @@ import {LocationStrategy, HashLocationStrategy} from '@angular/common';
     declarations: [
         AppComponent,
         HomeComponent,
-        ContactsComponent,
+        // ContactsComponent,
         // DashboardComponent,
         // HeroDetailComponent,
         // HeroesComponent

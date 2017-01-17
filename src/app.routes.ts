@@ -4,7 +4,7 @@ import {RouterModule} from "@angular/router";
 
 const routes = [
     {path: '', component: HomeComponent},
-    {path: 'contacts', component: ContactsComponent}
+    {path: 'contacts', loadChildren: './contacts/contacts.module#ContactsModule'}
 ];
 
 export default RouterModule.forRoot(routes);

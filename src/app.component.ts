@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
 
-
 @Component({
     selector: 'my-app',
     template: `
     <h1>{{title}}</h1>
     <nav>
-      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-      <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-    </nav>
+        <a routerLink="/">Home</a>
+        <a routerLink="/contacts">Contacts</a>
+</nav>
     <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
-    title = 'Tour of Heroes 1';
+    title = 'App component';
 }

@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const htmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  
+  devtool: 'cheap-module-eval-source-map',
   entry: {
     'vendor': './src/vendor',
     app: './src/main.ts'
@@ -43,5 +43,9 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.js', '.ts']
+  },
+  devServer: {
+    historyApiFallback: true,
+    stats: 'minimal'
   }
 };

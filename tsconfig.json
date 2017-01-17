@@ -7,7 +7,6 @@
         "outDir": "dist",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "types": ["node", "es6-shim"],
         "typeRoots": [
             "node_modules/@types"
         ]
